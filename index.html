@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/mbf.style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
-<body>
+<body cz-shortcut-listen="true">
     <main>
         <section id="login">
             <div id="imagem">
@@ -17,11 +18,11 @@
                 <form action="login.php" method="post">
                     <p class="form">
                         <label for="iemail"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#a34f4f"><path d="M479.8-494q-77.21 0-126-48.8-48.8-48.79-48.8-126 0-77.2 48.8-126.2 48.79-49 126-49 77.2 0 126.7 49T656-668.8q0 77.21-49.5 126Q557-494 479.8-494ZM135-216v-27q0-44 22.63-77.42Q180.27-353.83 217-371q69-31 133.5-46.5T479.73-433q66.73 0 130.5 16Q674-401 742-371q38 16 61 49.5t23 78.5v27q0 39-27.27 66.5T731-122H229q-40.05 0-67.02-27.5Q135-177 135-216Z"/></svg></label>
-                        <input type="email" name="email" id="iemail" placeholder="Seu e-mail">
+                        <input type="email" name="email" id="iemail" placeholder="Seu e-mail" required>
                     </p>
                     <p class="form">
                         <label for="isenha"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#a34f4f"><path d="M280-351q54 0 91.5-37.5T409-480q0-54-37.5-91.5T280-609q-53 0-91 37.5T151-480q0 54 38 91.5t91 37.5Zm.34 134Q171-217 94.5-293.74 18-370.47 18-480.24 18-590 94.17-666.5 170.33-743 280-743q89.59 0 155.3 49.5Q501-644 525-565h343l85 81-147 154-98-91-89 91-66-67h-28q-23 80-90.85 130t-153.81 50Z"/></svg></label>
-                        <input type="password" name="senha" id="isenha" placeholder="Sua senha">
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" required minlength="8">
                     </p>
                     <p class="enviar">
                         <input type="submit" value="Entrar">
