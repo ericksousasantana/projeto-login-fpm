@@ -10,7 +10,7 @@ Extra Large (XL): 1200px a 1400px (Ex.: Laptops grandes e monitores)
 
 */
 
-@media screen and (min-width: 760px) /* and (max-width: 992px) */ {
+@media screen and (min-width: 760px) and (max-width: 992px){
     body{
         background-image: linear-gradient(to bottom, pink, #DC858C, #C76368, brown 125%);
     }
@@ -32,7 +32,10 @@ Extra Large (XL): 1200px a 1400px (Ex.: Laptops grandes e monitores)
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px){
+    body{
+        background-image: linear-gradient(to bottom, pink, #DC858C, #C76368, brown 125%);
+    }
     section#login{
         display: flex;
         flex-direction: row-reverse;
